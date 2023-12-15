@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leah Loeser | Portfolio v4</title>
+
+    <!-- p5 shi -->
+    <script src="../js/background.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
+    <!-- google font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"
+    />
+
+    <!-- my js/css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <script src="../js/script.js"></script>
+
+  </head>
+  <body>
+    <!-- canvas frame -->
+    <div class="background"><canvas></canvas></div>
+    <div class="mask">
+      <div class="mask_top"></div>
+      <div class="mask_bottom"></div>
+      <div class="mask_left"></div>
+      <div class="mask_right"></div>
+    </div>
+    <div class="frame">
+      <div class="frame_line frame_line-left"></div>
+      <div class="frame_line frame_line-right"></div>
+      <div class="frame_line frame_line-top"></div>
+      <div class="frame_line frame_line-bottom"></div>
+    </div>
+
+    <header>
+      <div class="header-con">
+        <div id="name-con">
+          <div id="name">
+            <div>Leah</div>
+            <div>Loeser</div>
+          </div>
+          <div id="title-con">
+            <div id="des">
+              <div>Designer</div>
+              <div class="slash-con">
+                <div class="slash one"></div>
+                <div class="slash two"></div>
+              </div>
+            </div>
+            <div id="dev">Developer</div>
+          </div>
+        </div>
+        <div id="menu" class="active">
+          <ul>
+            <li id="home"><a href="../index.html">HOME</a></li>
+            <li id="work"><a href="work.html">WORK</a></li>
+            <li id="about"><a href="about.html">ABOUT</a></li>
+            <li id="contact"><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div id="bar-col">
+          <div class="bar-con">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-con">
+        <div class="page-info-con">
+          <div class="page-title">Contact</div>
+          <div class="page-line"></div>
+          <div class="contact-con">
+            <div class="contact-col-1">
+              <div class="title-con mail">
+                <div class="title-text">E MAIL</div>
+              </div>
+              <div class="link-con mail">
+                <a class="link mail" href="mailto: leahloeser@newschool.edu" target="_blank" rel="noopener noreferrer">
+                  <div class="arrow-con">
+                    <div class="arrow"></div>
+                  </div>
+                  <div class="link-text">leahloeser@newschool.edu</div>
+                </a>
+                <!-- copy function doesn't technically work...YET -->
+                <a id="link-copy">
+                  <div class="copy-con">
+                    <div id="copy-icon"></div>
+                  </div>
+                  <div class="text-copy">copy e-mail</div>
+                </a>
+              </div>
+            </div>
+            <div class="contact-col-2">
+              <div class="title-con social">
+                <div class="title-text">SOCIAL MEDIA</div>
+              </div>
+              <div class="link-con social">
+                <a class="link insta" href="" target="_blank" rel="noopener noreferrer">
+                  <div class="arrow-con">
+                    <div class="arrow"></div>
+                  </div>
+                  <div class="link-text">instagram</div>
+                </a>
+                <a class="link linkedin" href="" target="_blank" rel="noopener noreferrer">
+                  <div class="arrow-con">
+                    <div class="arrow"></div>
+                  </div>
+                  <div class="link-text">linkedin</div>
+                </a>
+                <a class="link github" href="https://github.com/LeahLoeser" target="_blank" rel="noopener noreferrer">
+                  <div class="arrow-con">
+                    <div class="arrow"></div>
+                  </div>
+                  <div class="link-text">github</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>

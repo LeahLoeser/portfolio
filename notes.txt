@@ -1,0 +1,25 @@
+TO DO
+- solve cursor: pointer issues (cursor only fashes pointer, doesn't hold while hover)
+
+references: modified
+
+    - link arrows: https://codepen.io/vuxen/pen/KxWQYv
+        -- sass to css: https://codebeautify.org/sass-to-css-converter
+    - hover underline: https://unclebigbay.com/how-to-create-an-hover-underline-animation-in-css
+
+    - burger icon transition: https://github.com/codewithMUHILAN/Reels/tree/main/ICONS/Icons%20Transition%20(29-09-23)
+
+references:
+    - custom scroll bar: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+    - open link in new tab: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/#:~:text=The%20href%20attribute%20set%20to,the%20pages%20you%20link%20to. 
+    - email link: https://www.tutorialspoint.com/html/html_email_links.htm
+    - html tab: https://www.altcademy.com/blog/how-to-tab-in-html/
+
+blue sky
+- theme switch: https://web.dev/patterns/theming/theme-switch
+- copy email to clipboard
+- fix social media underlines
+- Canvas changes
+    - slightly different rgb map on each page
+    - mask so flowfield avoids page content
+- z-index so elements fade-in in order

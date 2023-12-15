@@ -1,0 +1,137 @@
+.page-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* align-content: center; */
+  margin-top: 150px;
+  width: 100%;
+  height: 100%;
+}
+
+.page-info-con {
+  display: flex;
+  flex-direction: column;
+  /* align-items: left; */
+  margin-top: 14px;
+  width: 870px;
+  /* height: 200px; */
+}
+
+.page-title {
+  /* display: flex;
+  flex-direction: row; */
+  /* justify-content: right; */
+  color: white;
+  text-shadow: #000 1px 0 7px;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 70px;
+  margin-bottom: 30px;
+  /* padding-right: 20px; */
+}
+
+.page-line {
+  display: block;
+  height: 1.5px;
+  width: 870px;
+  background: #fff;
+  box-shadow: #000 1px 0 7px;
+  /* margin-top: 30px;
+    margin-bottom: 20px; */
+  /* margin-bottom: 17px; */
+}
+
+.page-description {
+  display: flex;
+  width: 870px;
+}
+
+p {
+  width: 870px;
+  color: #fff;
+  font-weight: 200;
+  text-shadow: #000 1px 0 7px, #000 1px 0 15px;
+  padding-top: 30px;
+}
+
+.resume-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 5px;
+  /* padding-right: 20px; */
+  width: 870px;
+}
+
+.resume-text {
+  /* margin-right: 20px; */
+  color: white;
+  text-shadow: #000 1px 0 7px, #000 1px 0 15px;
+  font-size: 16px;
+  font-weight: 600;
+  /* padding-left: 10px; */
+}
+
+.resume-link {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  cursor: pointer;
+}
+
+.resume-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  /* bottom: 0; */
+  left: 0;
+  background-color: #fff;
+  box-shadow: #000 1px 0 7px;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  margin-top: 25px;
+}
+
+.resume-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.arrow-con {
+  /* position: absolute; */
+  width: 25px;
+  height: 20px;
+}
+
+.arrow {
+  /* position: absolute; */
+  /* left: 50%; */
+  width: 1.5px;
+  height: 13.5px;
+  background: #fff;
+  transform: rotate(45deg) translateX(10px) translateY(-2px);
+  transform-origin: center center;
+}
+.arrow::after,
+.arrow::before {
+  position: absolute;
+  content: "";
+  width: 1.5px;
+  height: 8px;
+  background: #fff;
+  transform-origin: top center;
+}
+.arrow::after {
+  /* top: 0px;
+      right: 0px; */
+  transform: rotate(45deg);
+}
+.arrow::before {
+  /* top: 30px;
+      left: 30px; */
+  transform: rotate(-45deg);
+}
