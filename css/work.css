@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* margin-right: 250px; */
   margin-top: 30px;
   width: 100%;
   height: 200px;
@@ -79,16 +78,13 @@
   background: #fff;
   box-shadow: #000 1px 0 7px;
   margin-top: 5px;
-  /* margin-bottom: 17px; */
 }
 
 .work-con {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* margin-right: 50px; */
   margin-top: 30px;
-  /* padding-bottom: 50px; */
   width: 100%;
   height: 200px;
 }
@@ -110,7 +106,7 @@
   margin-top: 130px;
   padding-left: 30px;
   padding-right: 65px;
-  gap: 200px;
+  gap: 100px;
 }
 
 .project-con {
@@ -151,43 +147,99 @@
 }
 
 .project-title {
-  /* position: absolute;  */
   margin-top: 10px;
   color: white;
   font-size: 42px;
   font-weight: 200;
-  line-height: 45px;
+  line-height: 38px;
   text-shadow: #000 1px 0 7px;
 }
 
-.project-1 {
+.project {
   width: 370px;
-  height: 578px;
-  margin-top: -20px;
+  height: 678px;
 }
 
-.project-2 {
+.project_link {
   width: 370px;
-  height: 578px;
+  height: 576px;
+}
+
+.project_link-2 {
+  width: 370px;
+  height: 614px;
+}
+
+.source_link-con {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  margin-top: -5px;
+}
+
+.source_link-text {
+  color: white;
+  text-shadow: #000 1px 0 7px,
+  #000 1px 0 7px;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  padding-left: 20px;
+}
+
+.source_link {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
-.project-3 {
-  width: 370px;
-  height: 578px;
+.source_link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.75px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: #000 1px 0 7px;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  margin-top: 25px;
 }
 
-.project-4 {
-  width: 370px;
-  height: 578px;
+.source_link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
-.project-5 {
-  width: 370px;
-  height: 578px;
+.source_arrow-con {
+  width: 125px;
+  height: 10px;
+  line-height: 0;
 }
 
-.project-6 {
-  width: 370px;
-  height: 578px;
+.source_arrow {
+  width: 1px;
+  height: 13px;
+  background: #fff;
+  transform: rotate(45deg) translateX(10px);
+  transform-origin: center center;
+}
+.source_arrow::after,
+.source_arrow::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 8px;
+  background: #fff;
+  transform-origin: top center;
+}
+.source_arrow::after {
+  transform: rotate(45deg) translateY(-0.65px);
+}
+.source_arrow::before {
+  transform: rotate(-45deg) translateY(-0.65px);
 }
